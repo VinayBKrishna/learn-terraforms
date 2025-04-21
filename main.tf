@@ -20,5 +20,5 @@ output "y" {
 variable "data" {}
 
 output "data" {
-    value = "result from other file -${data} "
+    value = "result from other file -${var.data} "
 }
