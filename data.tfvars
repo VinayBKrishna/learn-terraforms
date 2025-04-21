@@ -1,6 +1,1 @@
-variable "data" {
-    default = {
-        name = vin
-        loc = last
-    }
-}
+data = "new work file"
