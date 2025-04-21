@@ -23,9 +23,9 @@ output "data" {
     value = "result from other file -${var.data.name} "
 }
 
-variable "abce" {}
+variable "data2" {}
 
 
-output "abce" {
-    value = "result from other file two data -${var.abce.name} "
+output "data2" {
+    value = "result from other file two data -${var.data2.name} "
 }
