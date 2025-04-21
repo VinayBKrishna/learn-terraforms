@@ -16,3 +16,9 @@ output "y" {
     value = var.y
 
 }
+
+variable "data" {}
+
+output "data" {
+    value = "result from other file -${var.data.name},${var.data.loc} "
+}
