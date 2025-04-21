@@ -12,7 +12,7 @@ output "x" {
 
 }
 
-output "x" {
+output "y" {
     value = var.y
 
 }
