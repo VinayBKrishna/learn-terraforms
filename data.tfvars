@@ -4,7 +4,7 @@ data = {
 
 }
 
-data2 = {
+daa2 = {
     name = "vin"
     age = 28
 
