@@ -1,4 +1,4 @@
-variables "x" {
+variable "x" {
     default = 10
 
 }
