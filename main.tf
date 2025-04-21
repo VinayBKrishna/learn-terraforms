@@ -8,6 +8,7 @@ variable "y" {
 }
 
 output "x" {
-    value = var
+    value = var.x
+    value = var.y
 
 }
