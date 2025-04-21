@@ -9,6 +9,10 @@ variable "y" {
 
 output "x" {
     value = var.x
+
+}
+
+output "x" {
     value = var.y
 
 }
