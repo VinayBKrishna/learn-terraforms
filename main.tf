@@ -3,6 +3,10 @@ variable "x" {
 
 }
 
+variable "y" {
+    default = 11
+}
+
 output "x" {
     value = var
 
