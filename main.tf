@@ -3,7 +3,7 @@ module "text_print" {
     text_to_print = "this is 1st sentence"
 }
 
-module "text_print" {
+module "text_print2" {
     source = "./modules"
     text_to_print = "this is 2nd sentence"
 }
