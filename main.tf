@@ -4,7 +4,7 @@ module "ec2_instance" {
     ami_id = each.value.ami_id
     ec2_name = each.key
     instance_type = each.value.instance_type
-
+    vpc_security_group_ids = var.vpc_security_group_ids
 }
 
 
