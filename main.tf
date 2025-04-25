@@ -20,5 +20,5 @@ locals  {
 }
 
 output "two_2" {
-    value = local.squared[0]
+    value = count
 }
