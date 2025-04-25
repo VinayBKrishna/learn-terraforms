@@ -8,5 +8,5 @@ variable "list" {
 }
 
 output "list_output" {
-    value = { for index,value in var.list: index => values }
+    value = { for index,value in var.list: index => value }
 }
