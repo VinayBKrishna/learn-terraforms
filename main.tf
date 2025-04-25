@@ -15,6 +15,10 @@ variable "list" {
         }]
 }
 
-output "list_output" {
-    value = { for index,value in var.list: index => [value.vin] }
+locals  {
+    squared = { for index,value in var.list: index => value.vin }
+}
+
+output "two_2" {
+    value = local.squared[0]
 }
