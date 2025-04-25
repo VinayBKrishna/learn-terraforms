@@ -1,3 +1,4 @@
+variable "text_to_print" {}
 
 resource "null_resource" "this" {
   provisioner "local-exec" {
@@ -8,4 +9,3 @@ resource "null_resource" "this" {
 
 }
 
-variable "text_to_print" {}
