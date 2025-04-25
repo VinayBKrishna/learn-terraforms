@@ -1,20 +1,21 @@
-module "text_print" {
-    source = "./modules"
-    text_to_print = "this is 1st sentence"
+module "ec2_instance" {
+    for_each = var.instance
+    source = "./modules/ec2_instance"
+    ami_id = each.value.ami_id
+    ec2_name = each.key
+    instance_type = each.value.instance_type
+
 }
 
-module "text_print2" {
-    source = "./modules"
-    text_to_print = "this is 2nd sentence"
+output "main_output" {
+    value = module.ec2_instance.ec2_output
 }
+# module "vpc_instance" {
+#     for_each = var.instance
+#     source = "./modules/vpc_instance"
+#     name = each.key
+#     zone_id = var.zone_id
+#     record = []
+# }
 
-module "text_print3" {
-    source = "./modules"
-    text_to_print = "this is 2nd sentence"
-}
-
-module "text_print4" {
-    source = "./modules"
-    text_to_print = "this is someting new to occure and alast the worldddddddddddd"
-}
 
