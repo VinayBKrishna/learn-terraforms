@@ -1,24 +1,12 @@
-resource "null_resource" "testing" {
-    count = 10
+module "text_print" {
+    source = "./modules"
+    text_to_print = "this is 1st sentence"
 }
 
-variable "list" {
-    default = [
-        {
-            vin = "any",
-            val = 10
-
-        },{
-            vin = "to",
-            val = 4
-
-        }]
+module "text_print" {
+    source = "./modules"
+    text_to_print = "this is 2nd sentence"
 }
 
-locals  {
-    squared = { for index,value in var.list: index => value.vin }
-}
 
-output "two_2" {
-    value = count.index
-}
+
