@@ -4,7 +4,15 @@ resource "null_resource" "testing" {
 
 variable "list" {
     default = [
-        1,2,3,4]
+        {
+            vin = "any",
+            val = 10
+
+        },{
+            vin = "to",
+            val = 4
+
+        }]
 }
 
 output "list_output" {
