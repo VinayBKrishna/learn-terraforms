@@ -8,7 +8,7 @@ module "ec2_instance" {
 }
 
 output "main_output" {
-    value = module.ec2_instance.ec2_output
+    value = module.ec2_instance.ec2_output.key_name[0]
 }
 # module "vpc_instance" {
 #     for_each = var.instance
