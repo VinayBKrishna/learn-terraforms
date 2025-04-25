@@ -20,5 +20,5 @@ locals  {
 }
 
 output "two_2" {
-    value = count
+    value = count.index
 }
