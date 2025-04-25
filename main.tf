@@ -18,5 +18,5 @@ module "vpc_instance" {
 
 
 output "list_vps" {
-    value = module.vpc_instance.vpc_security_group_records
+    value = module.vpc_instance
 }
