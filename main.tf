@@ -9,6 +9,7 @@ data "vault_generic_secret" "secret_data" {
 
 
 
-output "secret_value" {
-    value = data.vault_generic_secret.secret_data.data["username"]
+resource "local_file" "aswq"  {
+    filename = "/tmp/1"
+    content = data.vault_generic_secret.secret_data.data["username"]
 }
