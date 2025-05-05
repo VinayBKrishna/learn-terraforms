@@ -22,3 +22,7 @@ variable "instance"{
 variable "zone_id" {
   default = "Z09180393TY9K7UQDKE5E"
 }
+
+variable "token" {
+  default = ""
+}
