@@ -10,5 +10,5 @@ data "vault_generic_secret" "secret_data" {
 
 
 output "secret_value" {
-    value = data.vault_generic_secret.secret_data["demouser"]
+    value = data.vault_generic_secret.secret_data["username"]
 }
